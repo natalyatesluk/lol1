@@ -1,7 +1,7 @@
 
 import { renderProductCategoriesOptions } from "./modals/productModal.js";
 
-export const backURL = `https://jewelery-course-web.onrender.com`;
+export const backURL = `https://lol1-ohy7.onrender.com`;
 
 
 export const getUser = () => {
