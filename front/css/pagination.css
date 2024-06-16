@@ -1,0 +1,25 @@
+.pagination-container{
+    display: flex;
+    position: relative;
+    top: 60px;
+    flex: 0 0 auto;
+    margin: 10px 0 10px;
+    caret-color: transparent;
+    font-family: "Cinzel", serif;
+}
+
+/* Перевизначаємо папаметри bootstrap */
+
+.page-link {
+    color: rgba(49, 25, 11); ;
+    cursor: pointer;
+}
+
+.page-link:hover {
+    color: rgba(49, 25, 11); ;
+}
+
+.page-item.active .page-link {
+    background-color: rgba(49, 25, 11); 
+    border-color: rgba(49, 25, 11); 
+}

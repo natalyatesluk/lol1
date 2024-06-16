@@ -1,0 +1,160 @@
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    caret-color: transparent;
+    min-width: 400px;
+    width: 96vw;
+    background-color: white !important;
+}
+.product {
+    background-color: white !important; /* Встановлення білого фону */
+    border-color: white;
+    padding-top: 10px;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+    max-height: 300px; 
+}
+.product:hover{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.cart-card{
+    width: inherit;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.996);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.cart-remove-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    border: 1px solid rgba(205, 205, 207, 0.75);
+    padding: 0 5px;
+}
+
+.cart-remove-btn:hover{
+    background-color: #bebebe;
+}
+
+.cart-product-info{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    width: 100px;
+}
+
+.cart-img-container{
+    position: relative;
+    overflow: hidden;
+}
+
+.cart-product-img {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+
+.cart-product-category-text {
+    text-align: center;
+    font-family: "Marcellus", serif;
+    font-size: 20px;
+
+}
+
+.cart-product-name {
+    font-weight: bold;
+
+}
+
+.cart-manage-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.cart-manage-button{
+    display: block;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    /* border: none; */
+}
+
+.cart-manage-button:hover{
+    background-color: #ffffff;
+}
+
+.cart-current-item-count {
+    margin: 0 10px;
+    font-size: 1.8rem;
+    font-family: "Cinzel", serif; 
+}
+
+.cart-item-price {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    font-family: "Cinzel", serif;   
+     font-size: 40px;
+    font-weight: 600;
+    
+}
+
+.cart-order-price{
+    width: inherit;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.cart-order-price-label{
+    font-family: "Cinzel", serif;    font-size: 1.8rem;
+    margin-right: 20px;
+}
+
+.cart-order-price-text{
+    font-family: "Cinzel", serif;    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.cart-order-button-container{
+    width: inherit;
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.cart-empty-message{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.buy{
+    width: 100px;
+}
+.cart-remove-btn{
+    border-color: white;
+}
+.cart-product-info{
+     font-family: "Marcellus", serif;
+     font-size: 20px;
+}

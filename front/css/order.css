@@ -1,0 +1,194 @@
+.order-container {
+    display: flex;
+    flex-direction: column;
+    width: 96vw;
+    position: relative;
+    font-family: "Marcellus", serif;
+}
+.order-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(49, 25, 11);
+    padding: 10px;
+    margin-top: 60px;
+    border-radius: 5px;
+}
+
+.order-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.order-resep-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px 10px 10px;
+    caret-color: transparent;
+}
+.cart-item-price{
+    font-family: 'Cinzel',serif;
+    font-size: 20px;
+}
+.order-resep-info-item {
+    line-height: 1.1rem;
+    font-size: 0.9rem;
+    max-width: 270px;
+    margin: 7px 10px;
+}
+.btn-outline-primary{
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    background-color: rgba(49, 25, 11);
+    color: rgb(244, 239, 239);
+    border: 2px solid rgba(49, 25, 11, 0.847);
+    box-shadow: 3px 3px 10px rgba(50, 31, 6, 0.77);
+    font-family: "Marcellus", serif;
+}
+.btn-outline-primary:hover {
+    border: 3px solid rgb(49, 25, 11);
+    background-color: rgba(49, 25, 11);
+    box-shadow: 0 5px 10px rgba(50, 31, 6, 0.77);
+}
+
+.btn-outline-primary:active {
+    border: 1px solid rgb(49, 25, 11);
+    background-color: rgba(49, 25, 11);
+    box-shadow: 0 5px 10px rgba(50, 28, 8, 0.781);
+}
+
+.product-cart-btn {
+    font-size: 1.5rem;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.order-id-parent {
+    position: relative;
+}
+.cart-order-price-label,.cart-order-price-text{
+    font-family: 'Cinzel',serif;
+    font-size: 20px;
+}
+.order-id {
+    border: 1px solid rgba(49, 25, 11);
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+    position: absolute;
+    top: -1.5rem; 
+    left: 10px;
+    font-size: 0.75rem;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-id-item {
+    line-height: 1rem;
+    text-align: center;
+    color: rgba(49, 25, 11);
+    margin: 0 10px;
+}
+
+.order-status-text {
+    background-color: white;
+    border: 1px solid grey;
+    display: inline-block;
+    margin: 2px 0;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.order-status-manage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    line-height: 1.1rem;
+    font-size: 0.9rem;
+    margin: 10px 10px 0;
+}
+
+.order-status-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.order-status-select-item-label {
+    width: 130px;
+}
+
+.order-status-select-item-select {
+    width: 135px;
+}
+
+.order-status-select-item-btm {
+    width: 70px;
+    margin-left: 10px;
+}
+
+.order-cart-container {
+    display: flex;
+    flex-direction: column;
+    caret-color: transparent;
+}
+
+.order-cart-card {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(205, 205, 207, 0.75);
+    border-radius: 5px;
+}
+
+.order-details {
+    margin-left: 30px;
+    font-size: 17px;
+}
+
+/* Перевизначаємо параметри bootstrap */
+.accordion-button {
+    padding: 0.2rem 1rem;
+}
+.accordion-button{
+    border: 1px solid rgba(49, 25, 11);
+}
+.accordion-button:hover,
+.accordion-button:focus,
+.accordion-button:active {
+    border: 1px solid rgba(49, 25, 11);
+    box-shadow: 0 0 8px rgba(30, 11, 3, 0.711);
+    color: black;
+    background-color: transparent; /* Додавання прозорого фону */
+}
+
+.accordion-collapse {
+    color: black;
+}
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: transparent; /* Додавання прозорого фону */
+    border-color: rgba(49, 25, 11);
+    box-shadow: 0 0 8px rgba(30, 11, 3, 0.711);
+}
+

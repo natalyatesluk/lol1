@@ -1,0 +1,99 @@
+.product-details-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.details-img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.back-button {
+    position: absolute;
+    left: -100px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(49, 25, 11);
+    color: rgb(244, 239, 239);
+    border: 2px solid rgba(49, 25, 11, 0.847);
+    box-shadow: 3px 3px 10px rgba(50, 31, 6, 0.77);
+    font-family: "Marcellus", serif;
+}
+.details-btn{
+    text-align: center;
+    line-height: 50px; 
+    width:150px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    background-color: rgba(49, 25, 11);
+    color: rgb(244, 239, 239);
+    border: 2px solid rgba(49, 25, 11, 0.847);
+    box-shadow: 3px 3px 10px rgba(50, 31, 6, 0.77);
+    font-family: "Marcellus", serif;
+    font-size: 20px;
+}
+.details-btn,.back-button:hover {
+    border: 3px solid rgb(49, 25, 11);
+    box-shadow: 0 5px 10px rgba(50, 31, 6, 0.77);
+}
+
+.details-btn,.back-button:active {
+    border: 1px solid rgb(49, 25, 11);
+    box-shadow: 0 5px 10px rgba(50, 28, 8, 0.781);
+}
+
+.product-details-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.details-name, .details-category-text, .details-text {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: "Marcellus", serif;
+}
+
+.details-name,.details-price {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Cinzel", serif;
+}
+
+@media (max-width: 768px) {
+    .product-details-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details-img {
+        width: 300px;
+        height: auto;
+    }
+
+    .product-details-info {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .back-button {
+        position: static; 
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .details-name {
+        font-size: 20px;
+    }
+
+    .details-text {
+        font-size: 16px;
+    }
+}

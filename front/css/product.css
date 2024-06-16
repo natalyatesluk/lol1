@@ -1,0 +1,166 @@
+.product {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    width: 300px;
+    min-height: 430px; 
+    margin: 30px;
+    text-align: center;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.product-img {
+    width: 230px;
+    height: 230px;
+    margin: 5px auto;
+    caret-color: transparent;
+}
+
+.product-data {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    caret-color: transparent;
+}
+
+.product-category {
+    background-color: rgb(108, 117, 125, 0.75);
+    border-radius: 3px;
+    font-size: 5px; /* Менший розмір тексту категорії */
+    color: rgb(240, 227, 227); /* Сірий колір тексту категорії */
+    width: 60%;
+    position: absolute;
+    top: 45px;
+    left: -10px;
+    transform: skewX(-20deg);
+}
+
+.product-category-text {
+    font-family: "Marcellus", serif;
+    text-align: center;
+    transform: skewX(0deg);
+    color: rgba(173, 170, 170, 0.721);
+    font-size: 13px;
+}
+
+.product-name {
+    font-size: 1.5em; 
+    font-weight: bold;
+    padding-bottom: 5px;
+    color: rgba(49, 25, 11); 
+    font-family: "Cinzel", serif;
+}
+
+.product-text {
+    font-size: 17px;
+    font-family: "Marcellus", serif;
+}
+
+.product-price {
+    color: rgb(83, 43, 19);
+    font-family: "Cinzel", serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 0 15px;
+}
+
+.product-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    caret-color: transparent;
+}
+
+.product-manage-btns {
+    display: flex;
+}
+
+.product-btn,.product-btn-buy {
+    background-color: rgba(49, 25, 11);
+    color: rgb(244, 239, 239);
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 10px;
+    border: 2px solid rgba(49, 25, 11, 0.847);
+    box-shadow: 3px 3px 10px rgba(50, 31, 6, 0.77);
+    font-family: "Marcellus", serif;
+}
+.product-btn-buy{
+    width: 100px;
+    height: 40px;
+}
+.product-btn:hover,.product-btn-buy:hover {
+    border: 3px solid rgb(49, 25, 11);
+    box-shadow: 0 5px 10px rgba(50, 31, 6, 0.77);
+}
+
+.product-btn:active, .product-btn-buy:active {
+    border: 1px solid rgb(49, 25, 11);
+    box-shadow: 0 5px 10px rgba(50, 28, 8, 0.781);
+}
+
+.product-cart-btn {
+    font-size: 1.5rem;
+    padding: 0 20px;
+    cursor: pointer;
+}
+@media (max-width: 500px) {
+    .product {
+        width: 135px;
+        min-height: 215px; /* Мінімальна висота картки */
+        margin: 10px;
+    }
+    
+    .product-img {
+        width: 105px;
+        height: 105px;
+        margin: 5px auto;
+        caret-color: transparent;
+    }
+    .product-category-text {
+        font-size: 11px;
+    }
+    
+    .product-name {
+        font-size: 1.2rem; 
+        font-weight: bold;
+        padding-bottom: 5px;
+        color: rgba(49, 25, 11); 
+        font-family: "Cinzel", serif;
+    }
+    
+    .product-text {
+        font-size: 14px;
+        font-family: "Marcellus", serif;
+    }
+    
+    .product-price {
+        color: rgb(83, 43, 19);
+        font-family: "Cinzel", serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        padding: 0 15px;
+    }
+    .product-btn-buy {
+        width: 50px;
+        height:30px;
+        line-height: 13px; 
+        text-align: center;
+        font-family: "Marcellus", serif;
+        font-size: 15px;
+    }
+    .product-btn{
+        margin: 5px;
+        box-shadow: 3px 3px 5px rgba(50, 31, 6, 0.77);
+    }
+}

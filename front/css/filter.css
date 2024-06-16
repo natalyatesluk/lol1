@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Marcellus&family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+.filter-container {
+    position: relative;
+    z-index: 5;
+    top: 60px;
+    width: 100%;
+    background-color: rgb(49,25,11,0.5);
+    font-family: "Marcellus", serif;
+    font-size: 20px;
+    display: flex;
+}
+
+.filter-form {
+    min-height: 50px;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+   
+    margin: 0;
+    padding: 4px 2px;
+}
+
+.filter_div {
+    display: none; /* Початково приховані фільтри */
+    flex: 1;
+    margin: 1px 2px;
+    max-width: 20%;
+}
+.search_div {
+    flex: 1;
+    margin: 1px 2px;
+    max-width: 80%;
+}
+
+#filter-search {
+    width: 80%;
+    margin-left: 20px;
+}
+
+.filter-container input[type="text"],#filter-category,#filter-sort{
+    border-radius: 20px; 
+    border: 1px solid rgba(49, 25, 11, 0.415); 
+    background-color: #ffffffc7;
+    padding: 8px; 
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.filter-container input[type="text"]:focus ,#filter-category,#filter-sort
+ {
+    background-color: #ffffffee;
+    border-color:  rgba(49, 25, 11, 0.768); /* Зміна кольору бордюру при фокусі */
+    box-shadow: 0 0 8px rgba(235, 214, 206, 0.6); /* Додаємо тінь */
+    outline: none; /* Вимикаємо стандартний outline */
+}
+
+@media (max-width: 995px) {
+    #filter-search {
+        width: 100%;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 805px) {
+    .filter-form {
+        min-height: 50px;
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: none;
+        margin: 0;
+        padding: 4px 2px;
+    }
+
+    #filter-sort, #filter-category, #filter-search {
+        width: 100%;
+    }
+
+    .filter_div {
+        flex: 1;
+        margin: 1px 2px;
+        max-width: 100%;
+    }
+
+    .search_div {
+        flex: 1;
+        margin: 1px 2px;
+        max-width: 100%;
+    }
+}
+
+.toggle-filter-btn {
+    background-color: rgba(49, 25, 11);
+    color: rgb(244, 239, 239);
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 20PX;
+    border:2px solid rgba(49, 25, 11, 0.847);;
+}
+.toggle-filter-btn:hover {
+    border:3px solid rgb(49, 25, 11);
+    box-shadow: 0 0 10px rgba(235, 214, 206, 0.77); 
+}
+.toggle-filter-btn:active {
+    border:1px solid rgb(49, 25, 11);
+    box-shadow: 0 0 10px rgba(235, 214, 206, 0.781); 
+}

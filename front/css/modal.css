@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Marcellus&family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.modal-window {
+    width: 90%;
+    min-width: 40%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    background: white;
+    border-radius: 5px;
+    background-color: rgb(90, 60, 43);
+}
+
+.modal-header {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(185, 183, 183);
+    caret-color: transparent;
+    background-color: rgb(49, 25, 11);
+    color:white;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    color: #fefeff;
+    font-family: "Cinzel", serif;
+}
+.modal-close-btn {
+    width: 36px;
+    text-align: center;
+    font-weight: 200;
+    background-color: rgb(49, 25, 11);
+    border: 1px solid rgba(42, 6, 6, 0.395);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-close-btn:hover {
+    background-color: rgba(49, 25, 11, 0.625);
+    border: 1px solid rgb(160, 160, 160);
+}
+
+.modal-content {
+    padding: 10px 10px;
+    background-color: rgba(49, 25, 11, 0.492);
+    font-family: "Marcellus", serif;
+    color:white;
+}
+
+.modal-footer {
+    display: flex;
+    width: 100%;
+    font-family: "Marcellus", serif;
+}
+
+.modal-form-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 30px 0px;
+}
+
+.confirmation-footer{
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+    padding: 0 30px 10px;
+}
+
+.confirmation-message {
+    width: 100%;
+    color: rgba(250, 147, 147, 0.73);
+    text-align: center;
+}
+
+.login-footer {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-family: "Marcellus", serif;
+}
+
+.login-footer {
+    padding: 0 5px 5px;
+    color:white;
+}
+
+
+.modal-overlay.modal-open {
+    display: block;
+}
+
+.modal-overlay.modal-close {
+    display: none;
+}
+
+.switch-link{ 
+    cursor: pointer;
+    color: #e3d42b;
+}
+
+.touppercase{
+    text-transform: uppercase;
+}
+
+.form-image {
+    padding-right: 30px;
+}
+
+.btn-danger,.btn-success {
+    background-color: rgba(49, 25, 11, 0.415);
+    border: 2px solid rgba(191, 195, 191, 0.73);
+    border-radius: 20px;
+    color: white;
+    width:20%;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+    background-color: rgb(49, 25, 11);
+    border: 2.5px solid rgba(3, 136, 3, 0.73);
+    color: rgba(3, 136, 3);
+    box-shadow: 0 0 10px 2px rgba(3, 136, 3, 0.5); 
+}
+.btn-danger:hover {
+    background-color: rgb(49, 25, 11);
+    border: 2.5px solid rgba(136, 12, 3, 0.73);
+    color: rgb(136, 3, 3);
+    box-shadow: 0 0 10px 2px rgba(136, 3, 3, 0.5); 
+}
+.btn-danger,.btn-success:active{
+    background-color: rgba(49, 25, 11, 0.415);
+    border: 2px solid rgba(242, 248, 242, 0.73);
+    color: white;
+} 
+.modal-window input[type="text"],
+.modal-window input[type="password"],
+.modal-window input[type="email"],
+.modal-window input[type="number"],
+select{
+    border-radius: 20px; 
+    border: 1px solid rgba(49, 25, 11, 0.415); 
+    background-color: #ffffffc7;
+    padding: 8px; 
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.modal-window input[type="text"]:focus, 
+.modal-window input[type="password"]:focus,
+.modal-window input[type="email"]:focus,
+.modal-window input[type="number"]:focus,
+select
+ {
+    background-color: #ffffffee;
+    border-color:  rgba(49, 25, 11, 0.768); /* Зміна кольору бордюру при фокусі */
+    box-shadow: 0 0 8px rgba(235, 214, 206, 0.6); /* Додаємо тінь */
+    outline: none; /* Вимикаємо стандартний outline */
+}
+#producCategory,
+#productMaterial,
+#productInsertion,
+#productImage{
+    border-radius: 30px;
+}
+@media ( max-width: 600px) {
+    .modal-window {
+        min-width: 40%;
+        max-width: 90%;
+        top:10px
+    }
+    .btn-danger,.btn-success{
+        width: 100px;
+    }
+}
